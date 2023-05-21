@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-09-2022 a las 18:31:53
+-- Tiempo de generación: 20-05-2023 a las 18:31:53
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `users_crud_php`
+-- Base de datos: `users-crud-php`
 --
 
 -- --------------------------------------------------------
