@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-05-2023 a las 18:31:53
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 8.0.6
+-- Tiempo de generación: 21-05-2023 a las 06:10:24
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,20 +29,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `lastname` varchar(20) NOT NULL,
-  `username` varchar(14) NOT NULL,
-  `password` varchar(14) NOT NULL,
-  `email` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `name` varchar(30) NOT NULL,
+  `lastname` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `lastname`, `username`, `password`, `email`) VALUES
-(1, 'Daniel', 'Salmerón', 'salmeron_dev', '123456', 'salm@emial.com'),
-(5, 'Eduardo', 'Alvarado', 'daniel', '123', 'daniel@email.com');
+(6, 'Jean Carlo ', 'Guzman', 'jean25', '123456', 'jeanprueba1@gmai.com'),
+(7, 'Daniel', 'Becerra', 'itZdanielito777', 'dani12345unu', 'danielprueba2@email.com'),
+(8, 'Juan ', 'Cárdenas', 'Noah_novasheck', '26387123hjdskjah', 'juanprueba3@hotmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -62,7 +63,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
